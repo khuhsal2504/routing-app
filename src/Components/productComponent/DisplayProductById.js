@@ -4,7 +4,7 @@ export default function DisplayproductById(props) {
     let navigateTo=useNavigate()
     let product = props.productObject
         return (
-            <div className="container mt-3">
+            <div className="container mt-3" key={product.id}>
                 <div className="row">
                     <div className="col-4">
                         <img src={product.thumbnail} alt="" />

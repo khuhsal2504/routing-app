@@ -6,7 +6,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-         <a class="navbar-brand" href="#"><i class="bi bi-sign-turn-slight-right"></i>Routing-App</a>
+         <a className="navbar-brand" href="#"><i className="bi bi-sign-turn-slight-right"></i>Routing-App</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

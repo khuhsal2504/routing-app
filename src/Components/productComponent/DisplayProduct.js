@@ -9,7 +9,7 @@ return (
         {
             products && products.map(product => {
             return (
-            <div className="col-3">
+            <div className="col-3" key={product.id}>
                 <div className="card" style={{width:16+'rem'}}>
                     <img src={product.thumbnail} className="card-img-top" alt="..."/>
                     <div className="card-body">
@@ -20,7 +20,7 @@ return (
                             <p className="card-text fw-bold">{product.category}</p>
                         </div>
                         <div className='d-flex justify-content-between'>
-                            <a href="#" className="btn btn-primary">Add to Cart</a>
+                            <Link to="#" className="btn btn-primary">Add to Cart</Link>
                             <Link to={`/products/${product.id}`} className="btn btn-success">View More</Link>
                         </div>
                     </div>
