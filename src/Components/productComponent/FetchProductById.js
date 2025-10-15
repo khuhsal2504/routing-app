@@ -10,7 +10,7 @@ export default function FetchProductById() {
         let productObject = await response.json()
         setProduct(productObject)
     }
-    useEffect(() => { fetchProduct() }, [productId])
+    useEffect(() => { fetchProduct() })
     return (
         <div>
             {product && <DisplayProductById productObject={product} />}
